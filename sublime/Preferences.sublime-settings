@@ -1,0 +1,17 @@
+{
+    "font_face": "Fira Code",
+    "font_size": 8,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "draw_white_space": "all",
+    "translate_tabs_to_spaces": true,
+    "use_tab_stops": false,
+    "rulers": [
+        80,
+        100,
+        120
+    ]
+}
+

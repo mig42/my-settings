@@ -1,0 +1,63 @@
+{
+    "editor.renderWhitespace": "all",
+    "editor.autoIndent": "advanced",
+    "editor.rulers": [ 80, 100 ],
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    "window.zoomLevel": 0,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.plastic": true,
+        "**/.bplastic": true,
+        "publish": true,
+        "node_modules": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "breadcrumbs.enabled": true,
+    "window.titleBarStyle": "custom",
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.suggestSelection": "first",
+    "xml.java.home": "C:\\Program Files\\Java\\jdk1.8.0_212",
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "explorer.confirmDragAndDrop": false,
+    "git.autofetch": true,
+    "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
+    "editor.tabSize": 2,
+    "[csharp]": {
+        "editor.tabSize": 4
+    },
+    "[razor]": {
+        "editor.rulers": [ 100, 120 ]
+    },
+    "[aspnetcorerazor]": {
+        "editor.rulers": [ 100, 120 ]
+    },
+    "[html]": {
+        "editor.rulers": [ 100, 120 ]
+    },
+    "[vue-html]": {
+        "editor.rulers": [ 80, 100, 120 ]
+    },
+    "mochaExplorer.files": "out/test/**/*.js",
+    "mochaExplorer.require": [
+        "vscode-test"
+    ],
+    "diffEditor.renderSideBySide": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "files.associations": {
+        "*.include": "xml"
+    }
+}

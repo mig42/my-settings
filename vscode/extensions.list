@@ -45,3 +45,7 @@ vscjava.vscode-java-pack
 vscjava.vscode-java-test
 vscjava.vscode-maven
 xabikos.JavaScriptSnippets
+formulahendry.dotnet-test-explorer
+ms-dotnettools.csharp
+ms-mssql.mssql
+yatki.vscode-surround

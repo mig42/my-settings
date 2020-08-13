@@ -17,7 +17,7 @@ Set-Alias -Name unzip -Value Expand-Archive
 #   "PS $($executionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1)) ";
 # }
 
-# function prompt { 
+# function prompt {
 #   $time = Get-Date -Format "HH:mm:ss";
 #   Write-Host $time -ForegroundColor DarkYellow -NoNewline;
 #   Write-Host " $($executionContext.SessionState.Path.CurrentLocation)" -ForegroundColor DarkGreen;

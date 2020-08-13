@@ -1,222 +1,276 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "globals" :
-    {
-        "alwaysShowTabs" : true,
-        "defaultProfile" : "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-        "initialCols" : 120,
-        "initialRows" : 30,
-        "snapToGridOnResize": true,
-        "keybindings" :
-        [
-            {
-                "command" : "closeTab",
-                "keys" :
-                [
-                    "ctrl+w"
-                ]
+    "alwaysShowTabs": true,
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "initialCols": 120,
+    "initialRows": 30,
+    "snapToGridOnResize": true,
+    "theme": "dark",
+    "showTabsInTitlebar": true,
+    "showTerminalTitleInTitlebar": true,
+    "keybindings":
+    [
+        {
+            "command" : "closeTab",
+            "keys" :
+            [
+                "ctrl+w"
+            ]
+        },
+        {
+            "command" : "newTab",
+            "keys" :
+            [
+                "ctrl+t"
+            ]
+        },
+        {
+            "command" : {
+                "action": "newTab",
+                "index": 0
             },
-            {
-                "command" : "newTab",
-                "keys" :
-                [
-                    "ctrl+t"
-                ]
+            "keys" :
+            [
+                "ctrl+shift+1"
+            ]
+        },
+        {
+            "command" : {
+                "action": "newTab",
+                "index": 1
             },
-            {
-                "command" : "newTabProfile0",
-                "keys" :
-                [
-                    "ctrl+shift+1"
-                ]
+            "keys" :
+            [
+                "ctrl+shift+2"
+            ]
+        },
+        {
+            "command" : {
+                "action": "newTab",
+                "index": 2
             },
-            {
-                "command" : "newTabProfile1",
-                "keys" :
-                [
-                    "ctrl+shift+2"
-                ]
+            "keys" :
+            [
+                "ctrl+shift+3"
+            ]
+        },
+        {
+            "command" : {
+                "action": "newTab",
+                "index": 3
             },
-            {
-                "command" : "newTabProfile2",
-                "keys" :
-                [
-                    "ctrl+shift+3"
-                ]
+            "keys" :
+            [
+                "ctrl+shift+4"
+            ]
+        },
+        {
+            "command" : {
+                "action": "newTab",
+                "index": 4
             },
-            {
-                "command" : "newTabProfile3",
-                "keys" :
-                [
-                    "ctrl+shift+4"
-                ]
+            "keys" :
+            [
+                "ctrl+shift+5"
+            ]
+        },
+        {
+            "command" : {
+                "action": "newTab",
+                "index": 5
             },
-            {
-                "command" : "newTabProfile4",
-                "keys" :
-                [
-                    "ctrl+shift+5"
-                ]
+            "keys" :
+            [
+                "ctrl+shift+6"
+            ]
+        },
+        {
+            "command" : {
+                "action": "newTab",
+                "index": 6
             },
-            {
-                "command" : "newTabProfile5",
-                "keys" :
-                [
-                    "ctrl+shift+6"
-                ]
+            "keys" :
+            [
+                "ctrl+shift+7"
+            ]
+        },
+        {
+            "command" : {
+                "action": "newTab",
+                "index": 7
             },
-            {
-                "command" : "newTabProfile6",
-                "keys" :
-                [
-                    "ctrl+shift+7"
-                ]
+            "keys" :
+            [
+                "ctrl+shift+8"
+            ]
+        },
+        {
+            "command" : {
+                "action": "newTab",
+                "index": 8
             },
-            {
-                "command" : "newTabProfile7",
-                "keys" :
-                [
-                    "ctrl+shift+8"
-                ]
+            "keys" :
+            [
+                "ctrl+shift+9"
+            ]
+        },
+        {
+            "command" : "nextTab",
+            "keys" :
+            [
+                "ctrl+pgdn"
+            ]
+        },
+        {
+            "command" : "openSettings",
+            "keys" :
+            [
+                "ctrl+,"
+            ]
+        },
+        {
+            "command" : "prevTab",
+            "keys" :
+            [
+                "ctrl+pgup"
+            ]
+        },
+        {
+            "command" : "scrollDown",
+            "keys" :
+            [
+                "ctrl+shift+down"
+            ]
+        },
+        {
+            "command" : "scrollDownPage",
+            "keys" :
+            [
+                "ctrl+shift+pgdn"
+            ]
+        },
+        {
+            "command" : "scrollUp",
+            "keys" :
+            [
+                "ctrl+shift+up"
+            ]
+        },
+        {
+            "command" : "scrollUpPage",
+            "keys" :
+            [
+                "ctrl+shift+pgup"
+            ]
+        },
+        {
+            "command" : {
+                "action": "switchToTab",
+                "index": 0
             },
-            {
-                "command" : "newTabProfile8",
-                "keys" :
-                [
-                    "ctrl+shift+9"
-                ]
+            "keys" :
+            [
+                "ctrl+1"
+            ]
+        },
+        {
+            "command" : {
+                "action": "switchToTab",
+                "index": 1
             },
-            {
-                "command" : "nextTab",
-                "keys" :
-                [
-                    "ctrl+pgdn"
-                ]
+            "keys" :
+            [
+                "ctrl+2"
+            ]
+        },
+        {
+            "command" : {
+                "action": "switchToTab",
+                "index": 2
             },
-            {
-                "command" : "openSettings",
-                "keys" :
-                [
-                    "ctrl+,"
-                ]
+            "keys" :
+            [
+                "ctrl+3"
+            ]
+        },
+        {
+            "command" : {
+                "action": "switchToTab",
+                "index": 3
             },
-            {
-                "command" : "prevTab",
-                "keys" :
-                [
-                    "ctrl+pgup"
-                ]
+            "keys" :
+            [
+                "ctrl+4"
+            ]
+        },
+        {
+            "command" : {
+                "action": "switchToTab",
+                "index": 4
             },
-            {
-                "command" : "scrollDown",
-                "keys" :
-                [
-                    "ctrl+shift+down"
-                ]
+            "keys" :
+            [
+                "ctrl+5"
+            ]
+        },
+        {
+            "command" : {
+                "action": "switchToTab",
+                "index": 5
             },
-            {
-                "command" : "scrollDownPage",
-                "keys" :
-                [
-                    "ctrl+shift+pgdn"
-                ]
+            "keys" :
+            [
+                "ctrl+6"
+            ]
+        },
+        {
+            "command" : {
+                "action": "switchToTab",
+                "index": 6
             },
-            {
-                "command" : "scrollUp",
-                "keys" :
-                [
-                    "ctrl+shift+up"
-                ]
+            "keys" :
+            [
+                "ctrl+7"
+            ]
+        },
+        {
+            "command" : {
+                "action": "switchToTab",
+                "index": 7
             },
-            {
-                "command" : "scrollUpPage",
-                "keys" :
-                [
-                    "ctrl+shift+pgup"
-                ]
+            "keys" :
+            [
+                "ctrl+8"
+            ]
+        },
+        {
+            "command" : {
+                "action": "switchToTab",
+                "index": 8
             },
-            {
-                "command" : "switchToTab0",
-                "keys" :
-                [
-                    "ctrl+1"
-                ]
+            "keys" :
+            [
+                "ctrl+9"
+            ]
+        },
+        {
+            "command": "closePane",
+            "keys":
+            [
+                "ctrl+shift+w"
+            ]
+        },
+        {
+            "command": {
+                "action": "copy",
+                "singleLine": true
             },
-            {
-                "command" : "switchToTab1",
-                "keys" :
-                [
-                    "ctrl+2"
-                ]
-            },
-            {
-                "command" : "switchToTab2",
-                "keys" :
-                [
-                    "ctrl+3"
-                ]
-            },
-            {
-                "command" : "switchToTab3",
-                "keys" :
-                [
-                    "ctrl+4"
-                ]
-            },
-            {
-                "command" : "switchToTab4",
-                "keys" :
-                [
-                    "ctrl+5"
-                ]
-            },
-            {
-                "command" : "switchToTab5",
-                "keys" :
-                [
-                    "ctrl+6"
-                ]
-            },
-            {
-                "command" : "switchToTab6",
-                "keys" :
-                [
-                    "ctrl+7"
-                ]
-            },
-            {
-                "command" : "switchToTab7",
-                "keys" :
-                [
-                    "ctrl+8"
-                ]
-            },
-            {
-                "command" : "switchToTab8",
-                "keys" :
-                [
-                    "ctrl+9"
-                ]
-            },
-            {
-                "command": "closePane",
-                "keys":
-                [
-                    "ctrl+shift+w"
-                ]
-            },
-            {
-                "command": "copyTextWithoutNewlines",
-                "keys":
-                [
-                    "ctrl+alt+c"
-                ]
-            }
-        ],
-        "requestedTheme" : "dark",
-        "showTabsInTitlebar" : true,
-        "showTerminalTitleInTitlebar" : true
-    },
+            "keys":
+            [
+                "ctrl+alt+c"
+            ]
+        }
+    ],
     "profiles" :
     [
         {
@@ -226,10 +280,10 @@
             "hidden": false,
             "colorScheme": "Dracula",
             "name": "PowerShell Core",
-            "commandline" : "C:\\Program Files\\PowerShell\\6\\pwsh.exe -NoLogo",
+            "commandline" : "C:\\Program Files\\PowerShell\\7\\pwsh.exe -NoLogo",
             "cursorShape": "vintage",
             "closeOnExit": "graceful",
-            "historySize" : 9001,
+            "historySize" : 32600,
             "icon" : "ms-appx:///ProfileIcons/{574e775e-4f2a-5b96-ac1e-a2962a402336}.png",
             "padding" : "8",
             "snapOnInput" : true,
@@ -255,7 +309,7 @@
             "fontSize" : 10,
             "hidden": true,
             "guid" : "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-            "historySize" : 9001,
+            "historySize" : 32600,
             "icon" : "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
             "name" : "Windows PowerShell",
             "padding" : "0, 0, 0, 0",
@@ -274,7 +328,7 @@
             "fontFace" : "Consolas",
             "fontSize" : 10,
             "guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-            "historySize" : 9001,
+            "historySize" : 32600,
             "icon" : "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
             "name" : "cmd",
             "padding" : "0, 0, 0, 0",
@@ -290,6 +344,7 @@
             "fontFace": "Fira Code",
             "fontSize": 10,
             "acrylicOpacity" : 0.8,
+            "historySize": 32600,
             "useAcrylic": true,
             "cursorShape": "vintage",
             "cursorColor": "#80A4C2",

@@ -2,19 +2,11 @@
     "editor.renderWhitespace": "all",
     "editor.autoIndent": "advanced",
     "editor.rulers": [ 80, 100 ],
-    "eslint.run": "onType",
     "eslint.validate": [
         "javascript",
         "javascriptreact",
-        "vue",
-        "html"
+        "vue"
     ],
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true
-    },
-    "vetur.format.defaultFormatter.js": "vscode-typescript",
-    "vetur.format.defaultFormatter.html": "js-beautify-html",
-    "vetur.validation.template": false,
     "window.zoomLevel": 0,
     "files.exclude": {
         "**/.git": true,
@@ -40,9 +32,10 @@
     "workbench.colorTheme": "Material Theme Darker High Contrast",
     "explorer.confirmDragAndDrop": false,
     "git.autofetch": true,
-    "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
+    "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
     "terminal.integrated.allowChords": false,
-    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "terminal.integrated.shellArgs.windows": ["-NoLogo"],
     "editor.tabSize": 2,
     "[csharp]": {
         "editor.tabSize": 4
@@ -59,6 +52,11 @@
     "[vue-html]": {
         "editor.rulers": [ 80, 100, 120 ]
     },
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": false,
+        "files.trimTrailingWhitespace": false
+    },
     "mochaExplorer.files": "out/test/**/*.js",
     "mochaExplorer.require": [
         "vscode-test"
@@ -68,5 +66,28 @@
     "files.associations": {
         "*.include": "xml"
     },
-    "python.jediEnabled": false
+    "files.trimTrailingWhitespace": true,
+    "powershell.powerShellDefaultVersion": "PowerShell (x64)",
+    "vsonline.authentication.accountProvider": "Microsoft",
+    "editor.fontSize": 12,
+    "vsonline.accountProvider": "Microsoft",
+    "codespaces.accountProvider": "Microsoft",
+    "java.semanticHighlighting.enabled": true,
+    "git.alwaysSignOff": true,
+    "githubIssues.queries": [
+
+        {
+            "label": "My Issues",
+            "query": "default"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        },
+        {
+            "label": "Open Issues",
+            "query": "state:open repo:${owner}/${repository} sort:created-desc"
+        }
+    ],
+    "git.confirmSync": false
 }

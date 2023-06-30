@@ -4,6 +4,7 @@ lsp.on_attach(function(_, bufnr)
   local opts = { buffer = bufnr }
   lsp.default_keymaps(opts)
 
+  vim.keymap.set('n', 'K', function() vim.lsp.buf.hover() end, opts)
   vim.keymap.set('n', '<leader>vws', function() vim.lsp.buf.workspace_symbol() end, opts)
   vim.keymap.set('n', '<leader>db', function() vim.diagnostic.goto_prev() end, opts)
   vim.keymap.set('n', '<leader>df', function() vim.diagnostic.goto_next() end, opts)

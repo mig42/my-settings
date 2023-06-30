@@ -74,5 +74,13 @@ return require('packer').startup(function(use)
     },
 
     use 'github/copilot.vim',
+
+    use 'andymass/vim-matchup',
+    use 'monaqa/dial.nvim',
+    use 'karb94/neoscroll.nvim',
+    use 'smjonas/inc-rename.nvim',
+    use 'nacro90/numb.nvim',
+    use 'm4xshen/hardtime.nvim',
+
 }
 end)

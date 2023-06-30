@@ -86,3 +86,19 @@ map('n', '<leader>tcp', '<Cmd>BufferCloseAllButPinned<CR>', opts)
 map('n', '<leader>tcl', '<Cmd>BufferCloseBuffersLeft<CR>', opts)
 map('n', '<leader>tcr', '<Cmd>BufferCloseBuffersRight<CR>', opts)
 
+-- monaqa/dial.nvim remaps
+local dial = require('dial.map')
+
+vim.keymap.set("n", "<C-a>",  dial.inc_normal(), { noremap = true })
+vim.keymap.set("n", "<C-x>",  dial.dec_normal(), { noremap = true })
+vim.keymap.set("n", "g<C-a>",  dial.inc_gnormal(), { noremap = true })
+vim.keymap.set("n", "g<C-x>",  dial.dec_gnormal(), { noremap = true })
+vim.keymap.set("v", "<C-a>",  dial.inc_visual(), { noremap = true })
+vim.keymap.set("v", "<C-x>",  dial.dec_visual(), { noremap = true })
+vim.keymap.set("v", "g<C-a>", dial.inc_gvisual(), { noremap = true })
+vim.keymap.set("v", "g<C-x>", dial.dec_gvisual(), { noremap = true })
+
+-- inc-rename
+vim.keymap.set('n', '<leader>rn', function()
+  return ':IncRename ' .. vim.fn.expand('<cword>')
+end, { expr = true })

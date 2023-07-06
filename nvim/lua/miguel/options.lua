@@ -1,3 +1,8 @@
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
+vim.g.matchup_matchparen_offscreen = { method = "popup" }
+
 vim.opt.guicursor = ''
 vim.opt.cursorline = true
 
@@ -36,7 +41,9 @@ vim.opt.isfname:append('@-@')
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = { '80', '100', '120' }
 
-vim.g.mapleader = ' '
+vim.opt.list = true
+vim.opt.listchars:append 'space:⋅'
+vim.opt.listchars:append 'eol:󰌑'
 
 --set clipboard=unnamedplus " Enables the clipboard between Vim/Neovim and other applications.
 --set completeopt=noinsert,menuone,noselect " Modifies the auto-complete menu to behave more like an IDE.

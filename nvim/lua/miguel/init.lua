@@ -1,3 +1,3 @@
-require('miguel.packer-config')
-require('miguel.remap')
 require('miguel.options')
+require('miguel.lazy')
+require('miguel.remap')

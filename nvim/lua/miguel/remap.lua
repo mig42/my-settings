@@ -1,9 +1,5 @@
 vim.g.mapleader = ' '
 
--- Open project view
---vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
-vim.keymap.set('n', '<leader>pv', vim.cmd.NvimTreeOpen)
-
 -- Move highlighted lines with J (up) and K (down)
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
@@ -102,3 +98,21 @@ vim.keymap.set("v", "g<C-x>", dial.dec_gvisual(), { noremap = true })
 vim.keymap.set('n', '<leader>rn', function()
   return ':IncRename ' .. vim.fn.expand('<cword>')
 end, { expr = true })
+
+-- telescope
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
+vim.keymap.set('n', '<C-p>', builtin.git_files, {})
+vim.keymap.set('n', '<leader>ps', function()
+	builtin.grep_string({ search = vim.fn.input("Grep > ") });
+end)
+vim.keymap.set('n', '<leader>ws', builtin.lsp_workspace_symbols)
+vim.keymap.set('n', '<leader>wd', builtin.diagnostics)
+
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>pv",
+  ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
+  { noremap = true }
+)
+

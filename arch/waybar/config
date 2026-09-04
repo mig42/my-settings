@@ -1,0 +1,93 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "spacing": 4,
+
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["mpris"],
+    "modules-right": ["temperature", "cpu", "memory", "pulseaudio", "tray", "network", "battery", "clock", "custom/power"],
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true
+    },
+
+    "mpris": {
+        "format": "{player_icon} {artist} — {title}",
+        "format-paused": "\uf04c {artist} — {title}",
+        "player-icons": {
+            "default": "\uf04b",
+            "rhythmbox": "\uf001"
+        },
+        "status-icons": {
+            "paused": "\uf04c"
+        },
+        "max-length": 60
+    },
+
+    "temperature": {
+        "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+        "critical-threshold": 80,
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": ["\uf2cb", "\uf2ca", "\uf2c9", "\uf2c8", "\uf2c7"]
+    },
+
+    "cpu": {
+        "interval": 2,
+        "format": "\uf2db {usage}%",
+        "max-length": 10
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": "\uefc5 {used:0.1f}G",
+        "max-length": 10
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "\uf026 mute",
+        "format-icons": {
+            "default": ["\uf026", "\uf027", "\uf028"]
+        },
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right": "pavucontrol"
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 8
+    },
+
+    "network": {
+        "format-wifi": "\uf1eb {essid} ({signalStrength}%)",
+        "format-ethernet": "\uf0e8 {ipaddr}",
+        "format-disconnected": "⚠ Desconectado",
+        "max-length": 30,
+        "on-click": "foot -e nmtui"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "\uf0e7 {capacity}%",
+        "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"]
+    },
+
+    "clock": {
+        "format": "\uf017 {:%H:%M}",
+        "format-alt": "\uf017 {:%H:%M  \uf073 %d/%m/%Y}",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "locale": "es_ES.utf8"
+    },
+
+    "custom/power": {
+        "format": "\uf011",
+        "on-click": "swaynag -t warning -m '¿Qué quieres hacer?' -B 'Cerrar sesión' 'swaymsg exit' -B 'Apagar' 'systemctl poweroff' -B 'Reiniciar' 'systemctl reboot'",
+        "tooltip": false
+    }
+}
